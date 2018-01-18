@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Technical Details Form"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="84dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit1"
+        android:layout_alignStart="@+id/t1"
+        android:text="Name"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="237dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t1"
+        android:layout_toEndOf="@+id/t3"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit2"
+        android:layout_alignStart="@+id/t1"
+        android:layout_marginBottom="-130dp"
+        android:text="Sex"
+        android:textSize="22dp" />
+
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t3"
+        android:layout_toEndOf="@+id/t2"
+        android:entries="@array/spinneritem"></Spinner>
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="123dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:layout_toEndOf="@+id/t2"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/t1"
+        android:layout_alignTop="@+id/rg"
+        android:text="Degree"
+        android:textSize="22dp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit4"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-194dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rad1"
+            android:layout_width="97dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="106dp"
+            android:text="B.E CSE"
+            android:textSize="17dp" />
+
+
+        <RadioButton
+            android:id="@+id/rad2"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/t4"
+            android:layout_marginEnd="19dp"
+            android:text="B.E TECH IT"
+            android:textSize="17dp" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/t5"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit4"
+        android:layout_alignStart="@+id/t1"
+        android:text="Area"
+        android:textSize="22dp" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t5"
+        android:layout_toEndOf="@+id/t2"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="194dp"
+        android:layout_toEndOf="@+id/t2"
+        android:inputType="text" />
+
+
+    <TextView
+        android:id="@+id/t6"
+        android:layout_width="83dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/t1"
+        android:layout_marginBottom="177dp"
+        android:text="Rate"
+        android:textSize="22dp" />
+
+    <RatingBar
+        android:id="@+id/rat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="159dp"
+        android:layout_toEndOf="@+id/t2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="Submit"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="166dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="9dp" />
+
+
+</RelativeLayout>

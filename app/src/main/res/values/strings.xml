@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EXNo2</string>
+
+    <array name="spinneritem">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+
+
+</resources>
